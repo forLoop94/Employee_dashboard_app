@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { employeeData } from "../../dummys/employeeData";
+import { singleEmployee } from "../../dummys/employeeData";
 
 const initialState = {
-  employees: employeeData
+  employee: singleEmployee,
 }
 
 const employeeSlice = createSlice({

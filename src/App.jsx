@@ -1,10 +1,11 @@
 import "./App.css";
+import Overview from "./components/Overview";
 
 function App() {
   return (
-    <>
-      <h1 className="text-7xl">App</h1>
-    </>
+    <main className="bg-blue-600 h-screen p-8">
+      <Overview />
+    </main>
   );
 }
 
