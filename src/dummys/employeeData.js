@@ -57,6 +57,38 @@ export const singleEmployee = {
       status: "in-progress",
     }
   ]
-
-
 }
+
+
+export const empData = [
+  {
+    id: 1,
+    department: 'Engineering',
+    performance: 84,
+    sackables: 23
+  },
+  {
+    id: 2,
+    department: 'Sales',
+    performance: 90,
+    sackables: 14
+  },
+  {
+    id: 3,
+    department: 'HR',
+    performance: 93,
+    sackables: 7
+  },
+  {
+    id: 4,
+    department: 'security',
+    performance: 80,
+    sackables: 28
+  },
+  {
+    id: 5,
+    department: 'admin',
+    performance: 78,
+    sackables: 30
+  },
+]
