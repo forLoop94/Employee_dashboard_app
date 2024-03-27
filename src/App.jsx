@@ -3,7 +3,7 @@ import Overview from "./components/Overview";
 
 function App() {
   return (
-    <main className="bg-blue-600 h-screen p-8">
+    <main className="bg-gradient-to-r from-pitch to-lilac h-screen p-10">
       <Overview />
     </main>
   );
