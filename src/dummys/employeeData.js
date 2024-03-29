@@ -64,20 +64,20 @@ export const empData = [
   {
     id: 1,
     department: 'Engineering',
-    performance: 84,
+    performance: 45,
     sackables: 23
   },
   {
     id: 2,
     department: 'Sales',
     performance: 90,
-    sackables: 14
+    sackables: 67
   },
   {
     id: 3,
     department: 'HR',
-    performance: 93,
-    sackables: 7
+    performance: 12,
+    sackables: 78
   },
   {
     id: 4,
@@ -90,5 +90,23 @@ export const empData = [
     department: 'admin',
     performance: 78,
     sackables: 30
+  },
+]
+
+export const ageSet = [
+  {
+    id: 1,
+    department: 'admin',
+    avgAge: 28,
+  },
+  {
+    id: 2,
+    department: 'sales',
+    avgAge: 19,
+  },
+  {
+    id: 3,
+    department: 'HR',
+    avgAge: 38,
   },
 ]

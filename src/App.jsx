@@ -1,6 +1,5 @@
 import "./App.css";
 import Overview from "./components/Overview";
-import BarChart from "./components/charts/BarChart";
 
 function App() {
   return (
