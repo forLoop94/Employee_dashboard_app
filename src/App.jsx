@@ -1,5 +1,6 @@
 import "./App.css";
 import Overview from "./components/Overview";
+import "react-circular-progressbar/dist/styles.css";
 
 function App() {
   return (

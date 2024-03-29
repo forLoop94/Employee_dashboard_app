@@ -19,11 +19,7 @@ const options = {
 };
 
 const DoughnutChart = ({ chartData }) => {
-  return (
-    <div className="lg:col-span-1 lg:row-span-1 shadow-[0_0_25px_rgba(0,0,0,0.1)] rounded-2xl">
-      <Doughnut data={chartData} options={options} />
-    </div>
-  );
+  return <Doughnut data={chartData} options={options} />;
 };
 
 export default DoughnutChart;

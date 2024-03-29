@@ -16,11 +16,6 @@ const options = {
       text: "Performance Stats",
     },
   },
-  elements: {
-    line: {
-      tension: 0.5,
-    },
-  },
   borderRadius: 5,
 };
 

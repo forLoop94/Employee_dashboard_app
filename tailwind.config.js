@@ -10,7 +10,7 @@ export default {
         pitch: "#ffd2c1",
         lilac: "#eec1fa",
         blue: "#2697ff"
-      }
+      },
     },
   },
   plugins: [
