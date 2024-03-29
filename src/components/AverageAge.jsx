@@ -9,13 +9,13 @@ const AverageAge = () => {
       {
         label: "Average Ages",
         type: 'doughnut',
-        data: ageSet.map(age => age.avgAge)
+        data: ageSet.map(age => age.avgAge),
+        backgroundColor: [
+          "#2697ff",
+          "rgba(250, 192, 19, 0.8)",
+          "rgba(253, 135, 135, 0.8)",
+        ],
       }
-    ],
-    backgroundColor: [
-      "rgba(43, 63, 229, 0.8)",
-      "rgba(250, 192, 19, 0.8)",
-      "rgba(253, 135, 135, 0.8)",
     ],
   })
 

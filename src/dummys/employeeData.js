@@ -4,9 +4,12 @@ export const singleEmployee = {
   lastName: "Andrews",
   role: "Backend Engineer",
   rank: "Junior",
+  image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600",
+  employmentType: "remote",
   contact: {
-    phone: '01862222222',
+    phone: '+234 622 222 222',
     address: "Ikeja",
+    mail: "charlesuwem94@gmail.com",
     socials: {
       facebook: "facebook",
       linkedIn: "linkedIn"

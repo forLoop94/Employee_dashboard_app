@@ -2,7 +2,7 @@ import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import CountUp from "react-countup";
 
-const ProgressBar = ({ currentValue, expectedValue, styles, avatar, title }) => {
+const ProgressBarCircle = ({ currentValue, expectedValue, styles, avatar, title }) => {
   const percentage = (currentValue / expectedValue) * 100;
 
   return (
@@ -25,4 +25,4 @@ const ProgressBar = ({ currentValue, expectedValue, styles, avatar, title }) => 
   );
 };
 
-export default ProgressBar;
+export default ProgressBarCircle;
