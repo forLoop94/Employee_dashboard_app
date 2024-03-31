@@ -62,7 +62,7 @@ const Overview = () => {
   const TasksCompleted = 12;
 
   return (
-    <div className="rounded-3xl bg-white p-5 w-full lg:h-full lg:rounded-l-none lg:rounded-r-3xl flex-col justify-between">
+    <div className="flex-col justify-between">
       <nav className="mb-5">
         <h1 className="text-black font-extrabold h-6">Dashboard</h1>
         <small>Lorem ipsum dolor sit amet consectetur.</small>
