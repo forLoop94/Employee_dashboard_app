@@ -15,11 +15,11 @@ const NavPanel = () => {
   };
 
   return (
-    <div className="lg:h-full p-5 lg:bg-white rounded-l-3xl lg:shadow-[8px_0_10px_-6px_rgba(0, 0, 0, 0.5)]">
-      <div role="button" onClick={() => setTray(!tray)} className="lg:hidden">
-        <FaBars className="text-blue text-2xl" />
+    <div className="w-full lg:h-full p-5 lg:bg-white rounded-l-3xl lg:shadow-[8px_0_10px_-6px_rgba(0, 0, 0, 0.5)]">
+      <div role="button" onClick={() => setTray(!tray)} className="absolute top-5 left-5 z-20 lg:hidden">
+        <FaBars className="text-pink-500 text-2xl" />
       </div>
-      <div className={tray ? "invisible lg:visible" : ""}>
+      <div className={!tray ? "invisible lg:relative lg:visible" : "absolute top-0 left-0 bg-blue lg:bg-white min-w-64 h-screen z-10"}>
         <h1 className="text-blue">LOGO</h1>
         <ul className="pt-[40px] font-extrabold text-gray-400 text-[12px]">
           <li style={setNavPanelBackground("/overview")}
