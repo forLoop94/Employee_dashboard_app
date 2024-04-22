@@ -13,10 +13,9 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
 
     dispatch(loginUser(formData)).then(() => {
-      navigate('/analytics')
+      navigate('/')
     });
   };
 
