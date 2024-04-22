@@ -34,6 +34,8 @@ const authSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(loginUser.fulfilled, (state, action) => {
       state.loginInfo = action.payload;
+      const { token } = state.loginInfo;
+      localStorage.setItem("token", token);
     });
   },
 })
