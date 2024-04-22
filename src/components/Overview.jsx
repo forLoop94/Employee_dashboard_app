@@ -12,8 +12,11 @@ import {
   taskStyles,
 } from "./charts/progess-bar/buildStyles";
 import ProgressBarLinear from "./charts/progess-bar/ProgressBarLinear";
+import { useNavigate } from "react-router-dom";
 
 const Overview = () => {
+  const navigate = useNavigate();
+
   const avgPerformanceStat = () => {
     return empData.map((data) => Math.round(data.performance / data.sackables));
   };
@@ -61,11 +64,31 @@ const Overview = () => {
   const meetingsMissed = 15;
   const TasksCompleted = 12;
 
+  const handleSignOut = () => {
+    localStorage.removeItem("token");
+    navigate('/login');
+  }
+
   return (
     <div className="flex-col justify-between">
-      <nav className="mb-5">
-        <h1 className="text-black font-extrabold h-6">Dashboard</h1>
-        <small>Lorem ipsum dolor sit amet consectetur.</small>
+      <nav className="flex justify-between mb-5">
+        <div>
+          <h1 className="text-black font-extrabold h-6">Dashboard</h1>
+          <small>Lorem ipsum dolor sit amet consectetur.</small>
+        </div>
+        <div
+          className="hidden lg:flex justify-between items-center p-3 w-1/6 shadow-[0_0_25px_rgba(0,0,0,0.1)] rounded-2xl dropdown"
+          tabIndex={0}
+          role="button"
+        >
+          <h5 className="w-2/3">Sign Out</h5>
+          <img
+            className="rounded-full object-cover w-8 h-8"
+            src={singleEmployee.image}
+            alt=""
+          />
+          <div tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-36 mt-24" onClick={handleSignOut}>sign out</div>
+        </div>
       </nav>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         <div className="lg:col-span-1 lg:row-span-1 p-2 w-auto shadow-[0_0_25px_rgba(0,0,0,0.1)] rounded-2xl">
