@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Root from "./components/Root";
 import Analytics from "./pages/Analytics";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/forgotpassword/:userId/:resetString" element={<ForgotPassword />} />
     </Route>
   )
 );
